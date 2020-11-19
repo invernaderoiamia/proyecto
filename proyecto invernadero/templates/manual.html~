@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html style="background-color: #AED4E5">
+<title>Modo Manual</title>
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='estilos1.css')}}" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<center>
+<button class="btn"><a style="color:black;" href="{{url_for('automatico')}}">Cambiar modo</a></button>
+<table class="table table-dark">
+<tr>
+<tr>
+<td style="text-align: center;">Función</td>
+<td></td>
+<td>Estado</td>
+<td>Mediciones</td>
+</tr>
+<td>Regar &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<img src="{{ url_for('static', filename='img/riego.png') }}" alt=""> </td>
+<td>
+<button class="btnon"><a style="color:white;" href="{{url_for('bombaon')}}">ON</a></button>
+<button class="btnoff"><a style="color:white;" href="{{url_for('bombaoff')}}">OFF</a></button>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Ventilacion Temperatura &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<img src="{{ url_for('static', filename='img/temperature.png') }}" alt=""> </td>
+<td>
+<button class="btnon"><a style="color:white;" href="{{url_for('vent1on')}}">ON</a></button>
+<button class="btnoff"><a style="color:white;" href="{{url_for('vent1off')}}">OFF</a></button>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Ventilacion Humedad  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<img src="{{ url_for('static', filename='img/ventilacion2.png') }}" alt=""></td>
+<td>
+<button class="btnon"><a style="color:white;" href="{{url_for('vent2on')}}">ON</a></button>
+<button class="btnoff"><a style="color:white;" href="{{url_for('vent2off')}}">OFF</a></button>
+</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Luz&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{ url_for('static', filename='img/luz2.png') }}" </td>
+<td>
+<button class="btnon"><a style="color:white;" href="{{url_for('luzon')}}">Encendido</a></button>
+<button class="btnoff"><a style="color:white;" href="{{url_for('luzoff')}}">Apagado</a></button>
+</td>
+<td></td>
+<td></td>
+</td>
+</tr>
+</table>
+<button style="background-color: red"><a style="color:white;" href="{{url_for('alloff')}}">apagar todos</a></button>
+<button style=" align-content:center; background-color:gray">
+<a href="{{url_for('info')}}"> Información <img src="{{ url_for('static', filename='img/info.png') }}"> </a>
+</button>
+</center>
+</html>

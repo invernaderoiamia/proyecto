@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+<html style="background-color: #AED4E5">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='estilos1.css')}}" />
+<div class="container">
+  <div class="div-img" >
+    <img height="300" width="350" class="img" src="{{ url_for('static', filename='img/inverni.png') }}">
+    <div class="text">Tu invernadero ideal!!</div>
+  </div>
+</div>
+<br><br><br>
+<div align="center">
+<br><br>
+<p style="color:blue">IAMIA</p>
+<form action = "/index" method"GET">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='estilos1.css')}}" />
+<p>IAMIA es un invernadero inteligente el cual cuidara de la forma que se merecen tus plantas<br>
+</p>
+<button class="btn3"><a style="color:green" href="{{url_for('login')}}">Iniciar Sesion</a> </button>
+</form>
+</div>
+</head>
+</html>

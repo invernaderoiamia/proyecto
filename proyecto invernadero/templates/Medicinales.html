@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<div align="center">
+<title>Medicinales</title>
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='estilos1.css')}}" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="/usr/lib/cgi-bin/lib/css/jkeyboard.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="/usr/lib/cgi-bin/lib/src/jkeyboard.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="jquery/jquery-3.5.1.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function () {
+
+	$("#btnm1").click(function (e) {
+		var datom = $("#m1").val();
+		$.ajax({url:'/seleccionmed',type:'POST', data:{datom},success:
+		function (response) {
+			console.log(response);
+		}	
+		});
+		e.preventDefault();
+	});
+	
+	$("#btnm2").click(function (e) {
+		var datof = $("#m2").val();
+		$.ajax({url:'/seleccionmed',type:'POST', data:{datom},success:
+		function (response) {
+			console.log(response);
+		}	
+		});
+		e.preventDefault();
+	});
+	
+	$("#btnm3").click(function (e) {
+		var datof = $("#m3").val();
+		$.ajax({url:'/seleccionmed',type:'POST', data:{datom},success:
+		function (response) {
+			console.log(response);
+		}	
+		});
+		e.preventDefault();
+	});
+	
+	$("#btnm4").click(function (e) {
+		var datof = $("#m4").val();
+		$.ajax({url:'/seleccionmed',type:'POST', data:{datom},success:
+		function (response) {
+			console.log(response);
+		}	
+		});
+		e.preventDefault();
+	});
+	
+	$("#btnm5").click(function (e) {
+		var datof = $("#m5").val();
+		$.ajax({url:'/seleccionmed',type:'POST', data:{datom},success:
+		function (response) {
+			console.log(response);
+		}	
+		});
+		e.preventDefault();
+	});
+});
+</script>
+<p>En esta categoria IAMIA esta diseñado para cuidar las siguientes plantas <br> elije una opcion!</p>
+<p>Medicinales</p>
+<form action="/seleccionmed" method="POST" >
+<table border="1" class="table table-dark">
+
+  <tr>
+  
+    <th scope="row">No.</th>
+
+    <th>Planta</th>
+    
+    <th>Frutos</th>
+
+    <th>Descripcion</th>
+
+    <th>IR</th>
+    
+  </tr>
+
+  <tr>
+  
+  
+  	 <th>
+  	 
+  	 <input value="1" id="m1" name="m1" style="background-color: darkslategrey;" size="2" readonly></th>
+
+    <th>Hierbabuena</th>
+    
+    <td> <img width="90" src="{{ url_for('static', filename='img/hierbabuena.jpeg') }}"></td>
+
+    <td>Mentha spicata, conocida popularmente como hierbabuena, yerbabuena o menta de jardín, es una especie del género Mentha, una hierba aromática muy empleada en gastronomía y perfumería por su aroma intenso y fresco.</td>
+ 
+    <td> <input type="button" name="btnm1" id="btnm1" value="Elegir"></td>
+
+  </tr>
+
+  <tr>
+
+	<th>
+  	 
+  	 <input value="2" id="m2" style="background-color: darkslategrey;" size="2" readonly placeholder="2"></th>
+	
+	
+    <th>Lavanda</th>
+    
+    <td><image width="90" src="{{ url_for('static', filename='img/lavanda.jpeg') }}"></td>
+
+    <td>Lavandula es un género de plantas de la familia de las lamiáceas,se las conoce como lavanda, alhucema, espliego o cantueso, entre otros muchos nombres comunes.</td>
+
+   <td> <input type="button" name="btnm2" id="btnm2" value="Elegir"></td>
+
+  </tr>
+
+  <tr>
+   <th>
+  	 <input value="3" id="m3" name="m3" style="background-color: darkslategrey;" size="2" readonly></th>
+
+    <th>Estafiate</th>
+    
+    <td><image height="90" width="90" src="{{ url_for('static', filename='img/estafiate.jpeg') }}"></td>
+
+    <td>Artemisia ludoviciana, llamado popularmente estafiate, es una especie de perenne perteneciente a la familia Asteracea,el estafiate es una hierba erecta que alcanza un tamaño de hasta de 1 m de altura.  </td>
+
+	 <td> <input type="button" name="btnm3" id="btnm3" value="Elegir"></td>
+  </tr>
+  
+  <tr>
+  <th>
+  
+   <input value="4" id="m4" name="m4" style="background-color: darkslategrey;" size="2" readonly></th>
+
+    <th>Manzanilla</th>
+    
+    <td><image width="90" height="60" src="{{ url_for('static', filename='img/manzanilla.jpeg') }}"></td>
+
+    <td>La manzanilla o camomila común o romana es una hierba perenne de la familia de las asteráceas, nativa de Europa.</td>
+	
+	 <td> <input type="button" name="btnm4" id="btnm4" value="Elegir"></td>
+    
+  </tr>
+  
+  <tr>
+  <th>
+  
+  <input value="5" id="m5" name="m5" style="background-color: darkslategrey;" size="2" readonly></th>
+
+    <th>Amapola</th>
+    
+    <td><image width="90" src="{{ url_for('static', filename='img/amapola.jpeg') }}"></td>
+
+    <td>Es una planta de ciclo anual que puede alcanzar más de 50 cm de altura. Posee tallos erectos y poco ramificados con finos pelillos. Las hojas, que nacen alternas a lo largo del tallo, sin peciolo, son pinnadas y muy dentadas en los márgenes con una única nervadura central.</td>
+
+   <td> <input type="button" name="btnm5" id="btnm5" value="Elegir"></td>
+
+  </tr>
+  
+  
+
+</table>
+</form>
+
+
+
+</div>
+</html>

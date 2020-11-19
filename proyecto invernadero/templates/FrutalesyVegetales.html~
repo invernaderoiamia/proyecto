@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<div align="center">
+<title> Frutales y Vegetales</title>
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='estilos1.css')}}" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="/usr/lib/cgi-bin/lib/css/jkeyboard.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="/usr/lib/cgi-bin/lib/src/jkeyboard.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="jquery/jquery-3.5.1.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function () {
+
+	$("#btnf1").click(function (e) {
+		var datof = $("#f1").val();
+		$.ajax({url:'/seleccionvf',type:'POST', data:{datof},success:
+		function (response) {
+			console.log(response);
+		}	
+		});
+		e.preventDefault();
+	});
+	
+	$("#btnf2").click(function (e) {
+		var datof = $("#f2").val();
+		$.ajax({url:'/seleccionvf',type:'POST', data:{datof},success:
+		function (response) {
+			console.log(response);
+		}	
+		});
+		e.preventDefault();
+	});
+	
+	$("#btnf3").click(function (e) {
+		var datof = $("#f3").val();
+		$.ajax({url:'/seleccionvf',type:'POST', data:{datof},success:
+		function (response) {
+			console.log(response);
+		}	
+		});
+		e.preventDefault();
+	});
+	
+	$("#btnf4").click(function (e) {
+		var datof = $("#f4").val();
+		$.ajax({url:'/seleccionvf',type:'POST', data:{datof},success:
+		function (response) {
+			console.log(response);
+		}	
+		});
+		e.preventDefault();
+	});
+	
+	$("#btnf5").click(function (e) {
+		var datof = $("#f5").val();
+		$.ajax({url:'/seleccionvf',type:'POST', data:{datof},success:
+		function (response) {
+			console.log(response);
+		}	
+		});
+		e.preventDefault();
+	});
+	
+	$("#btnf6").click(function (e) {
+		var datof = $("#f6").val();
+		$.ajax({url:'/seleccionvf',type:'POST', data:{datof},success:
+		function (response) {
+			console.log(response);
+		}	
+		});
+		e.preventDefault();
+	});
+	
+	$("#btnf7").click(function (e) {
+		var datof = $("#f7").val();
+		$.ajax({url:'/seleccionvf',type:'POST', data:{datof},success:
+		function (response) {
+			console.log(response);
+		}	
+		});
+		e.preventDefault();
+	});
+	
+	$("#btnf8").click(function (e) {
+		var datof = $("#f8").val();
+		$.ajax({url:'/seleccionvf',type:'POST', data:{datof},success:
+		function (response) {
+			console.log(response);
+		}	
+		});
+		e.preventDefault();
+	});
+	
+	$("#btnf9").click(function (e) {
+		var datof = $("#f9").val();
+		$.ajax({url:'/seleccionvf',type:'POST', data:{datof},success:
+		function (response) {
+			console.log(response);
+		}	
+		});
+		e.preventDefault();
+	});
+	
+	$("#btnf10").click(function (e) {
+		var datof = $("#f10").val();
+		$.ajax({url:'/seleccionvf',type:'POST', data:{datof},success:
+		function (response) {
+			console.log(response);
+		}	
+		});
+		e.preventDefault();
+	});
+});
+</script>
+<p>En esta categoria inverni esta diseñado para cuidar las siguientes plantas <br> elije una opcion!</p>
+<p>Vegetales</p>
+<form action="/seleccionvf" method="POST" >
+<table border="1" class="table table-dark">
+
+  <tr>
+  
+    <th scope="row">No.</th>
+
+    <th>Planta</th>
+    
+    <th>Frutos</th>
+
+    <th>Descripcion</th>
+
+    <th>IR</th>
+    
+  </tr>
+
+  <tr>
+  
+  
+  	 <th>
+  	 
+  	 <input value="1" id="f1" name="f1" style="background-color: darkslategrey;" size="2" readonly></th>
+
+    <th>Tomate</th>
+    
+    <td> <img width="90" src="{{ url_for('static', filename='img/tomate.jpeg') }}"></td>
+
+    <td>es una especie de planta herbácea del género Solanum de la familia Solanaceae; es nativa de América Central y México, del norte y noroeste de Sudamérica</td>
+ 
+    <td> <input type="button" name="btnf1" id="btnf1" value="Elegir"></td>
+
+  </tr>
+
+  <tr>
+
+	<th>
+  	 
+  	 <input value="2" id="f2" style="background-color: darkslategrey;" size="2" readonly placeholder="2"></th>
+	
+	
+    <th>Tomatillo (Jitomate)</th>
+    
+    <td><img width="90" src="{{ url_for('static', filename='img/tomatillo.jpeg') }}"></td>
+
+    <td>también conocido como tomate de cáscara mexicana , es una planta de la familia de las solanáceas que da frutos pequeños, esféricos y de color verde o verde-violeta del mismo nombre</td>
+
+   <td> <input type="button" name="btnf2" id="btnf2" value="Elegir"></td>
+
+  </tr>
+
+  <tr>
+   <th>
+  	 <input value="3" id="f3" name="f3" style="background-color: darkslategrey;" size="2" readonly></th>
+
+    <th>Chile Serrano (Verde)</th>
+    
+    <td><img width="90" src="{{ url_for('static', filename='img/chileverde.jpeg') }}"></td>
+
+    <td>caracterizado por ser pequeño, de forma cilíndrica y a veces terminado en punta. Se considera picante y generalmente se acompaña con sus semillas y venas, también muy picantes. </td>
+
+	 <td> <input type="button" name="btnf3" id="btnf3" value="Elegir"></td>
+  </tr>
+  
+  <tr>
+  <th>
+  
+   <input value="4" id="f4" name="f4" style="background-color: darkslategrey;" size="2" readonly></th>
+
+    <th>Habanero</th>
+    
+    <td><img width="90" height="60" src="{{ url_for('static', filename='img/habanero.jpeg') }}"></td>
+
+    <td>Es una planta herbácea o arbusto, ramificados, que alcanzan un tamaño de hasta 2,5 m de alto. Las hojas son pecioladas, con pecíolos 0,5-3 cm de largo, solitarias o en pares, ovadas, de hasta de 12 cm de largo y 4,5 cm de ancho y con ápice acuminado, base cuneada o atenuada, escasamente pubescentes.</td>
+	
+	 <td> <input type="button" name="btnf4" id="btnf4" value="Elegir"></td>
+    
+  </tr>
+  
+  <tr>
+  <th>
+  
+  <input value="5" id="f5" name="f5" style="background-color: darkslategrey;" size="2" readonly></th>
+
+    <th>Zanahoria</th>
+    
+    <td><image width="90" src="{{ url_for('static', filename='img/zanahoria.jpeg') }}"></td>
+
+    <td>Daucus carota subespecie sativus, llamada popularmente zanahoria, es la forma domesticada de la zanahoria silvestre (Daucus carota), especie de la familia de las umbelíferas, también denominadas apiáceas, y considerada la más importante y de mayor consumo dentro de esta familia.</td>
+
+   <td> <input type="button" name="btnf5" id="btnf5" value="Elegir"></td>
+
+  </tr>
+  
+    
+  </table>
+  <p>Frutales</p>
+<form action="/seleccionvf" method="POST" >
+<table border="1" class="table table-dark">
+<tr>
+  <th>
+  <tr>
+  
+    <th scope="row">No.</th>
+
+    <th>Planta</th>
+    
+    <th>Frutos</th>
+
+    <th>Descripcion</th>
+
+    <th>IR</th>
+    
+  </tr>
+  <th>
+  <input value="6" id="f6" name="f6" style="background-color: darkslategrey;" size="2" readonly></th>
+
+    <th>Pimiento</th>
+    
+    <td><img width="90" src="{{ url_for('static', filename='img/pimiento.jpeg') }}"></td>
+
+    <td>Capsicum annuum, comúnmente pimiento, chile, ají dulce, pimentón o morrón, entre una multitud de localismos, es la especie más conocida, extendida y cultivada del género Capsicum, de la familia Solanaceae.</td>
+   <td> <input type="button" name="btnf6" id="btnf6" value="Elegir"></td>
+
+  </tr>
+    <tr>
+  <th>
+  
+  <input value="7" id="f7" name="f7" style="background-color: darkslategrey;" size="2" readonly></th>
+
+    <th>Cacahuate</th>
+    
+    <td><img width="90" src="{{ url_for('static', filename='img/cacahuate.jpeg') }}"></td>
+
+    <td>Arachis hypogaea, comúnmente conocido como cacahuete, caguate, cacahuate o maní, es una legumbre de la familia de las Fabaceae (fabáceas) cuyos frutos de vaina -se asocian popularmente por su morfología a los frutos secos1​- contienen semillas apreciadas en la gastronomía.</td>
+   <td> <input type="button" name="btnf7" id="btnf7" value="Elegir"></td>
+
+  </tr>
+    <tr>
+  <th>
+  
+  <input value="8" id="f8" name="f8" style="background-color: darkslategrey;" size="2" readonly></th>
+
+    <th>Betabel</th>
+    
+    <td><img width="90" src="{{ url_for('static', filename='img/betabel.jpeg') }}"></td>
+
+    <td>Beta vulgaris es una especie herbácea perteneciente a la familia Amaranthaceae. Sus nombres más comunes en español son acelga, remolacha, betabel, beteraba,betarraga y beterraga.</td>
+   <td> <input type="button" name="btnf8" id="btnf8" value="Elegir"></td>
+
+  </tr>
+    <tr>
+  <th>
+  
+  <input value="9" id="f9" name="f9" style="background-color: darkslategrey;" size="2" readonly></th>
+
+    <th>Uva</th>
+    
+    <td><img width="90" src="{{ url_for('static', filename='img/uva.jpeg') }}"></td>
+
+    <td>La vid o parra, cuyo nombre científico es Vitis vinifera, es una planta semileñosa o trepadora que cuando se deja crecer libremente puede alcanzar más de 30 m, pero que, por la acción humana, podándola anualmente, queda reducida a un pequeño arbusto de 1 m. Su fruto, la uva, es comestible y materia prima para la fabricación de vino y otras bebidas alcohólicas.</td>
+   <td> <input type="button" name="btnf9" id="btnf9" value="Elegir"></td>
+
+  </tr>
+    <tr>
+  <th>
+  
+  <input value="10" id="f10" name="f10" style="background-color: darkslategrey;" size="2" readonly></th>
+
+    <th>Fresa</th>
+    
+    <td><img width="90" src="{{ url_for('static', filename='img/fresa.jpeg') }}"></td>
+
+    <td>Fragaria, llamado comúnmente fresa o frutilla, es un género de plantas rastreras estoloníferas de la familia Rosaceae, Son cultivadas por su fruto comestible (eterio) llamado de la misma manera, fresa o frutilla.</td>
+
+   <td> <input type="button" name="btnf10" id="btnf10" value="Elegir"></td>
+
+  </tr>
+  
+  
+
+</table>
+</form>
+
+
+
+</div>
+</html>

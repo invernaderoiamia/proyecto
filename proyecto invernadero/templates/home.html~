@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html style="background-color: #AED4E5">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='estilos1.css')}}" />
+<div align="center">
+<h1>Elija entre estas categorias de plantas</h1>
+<form>
+<h2 style="color:blue">En este apartado podras escoger entre 3 categorias distintas de plantas
+las cuales son:</h2>
+<button class="btn3"> 
+<a href="{{url_for('decorativas')}}">1.-Decorativas</a>
+</button>
+<br> <br>
+<button class="btn3">
+<a  href="{{url_for('frutalesyvegetales')}}">2.-Frutales y Vegetales</a>
+</button>
+<br> <br>
+<button class="btn3">
+<a href="{{url_for('medicinales')}}">3.-Medicinales</a>
+</button>
+</form>
+</div>
+</html>

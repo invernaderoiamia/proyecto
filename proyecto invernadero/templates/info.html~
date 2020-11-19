@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<title>Información</title>
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='estilos1.css')}}" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<center>
+<p>Información</p>
+<table class="table table-dark" >
+
+  <tr>
+
+    <th scope="row">Opción</th>
+    
+    <th>funcion</th>
+
+    <th>Descripcion</th>
+  </tr>
+
+  <tr>
+
+    <th>Regar</th>
+    
+    
+    <td> <img width="90" src="{{ url_for('static', filename='img/riego.png') }}"></td>
+
+    <td>Al elejir está opción comenzara el riego hacia su planta, tenga cuidado
+     de no dejarla por mucho tiempo ya que podria ahogar su planta.</td>
+   
+  </tr>
+  <tr>
+
+    <th>Ventilación por Temperatura</th>
+    
+    
+    <td> <img width="90" src="{{ url_for('static', filename='img/temperature.png') }}"></td>
+
+    <td>Al elejir está opción comenzara la ventilacion para estabilizar la temperatura dentro de Inverni,
+    tenga en cuenta la temperatura que necesita su planta.</td>
+   
+  </tr>
+   <th>Ventilación por Humedad</th>
+    
+    
+    <td> <img width="90" src="{{ url_for('static', filename='img/ventilacion2.png') }}"></td>
+
+    <td>Al elejir está opción comenzara la ventilacion para estabilizar la Humedad dentro de Inverni,
+    tenga en cuenta la humedad que necesita su planta y que no este por debajo de lo necesitado.</td>
+   
+  </tr>
+   <th>Compuerta</th>
+    
+    
+    <td> <img width="90" src="{{ url_for('static', filename='img/compuerta2.png') }}"></td>
+
+    <td>Al elejir está opción se abrira la compuerta la cual permitira que entre aire 
+    directamente a inverni al igual que agua, tenga mucho cuidado con dejarlo siempre abierto.</td>
+   
+  </tr>
+  
+   <th>Luz</th>
+    
+    
+    <td> <img width="50" src="{{ url_for('static', filename='img/luz2.png') }}"></td>
+
+    <td>Al elejir está opción se abrira la compuerta la cual permitira que entre aire 
+    directamente a inverni al igual que agua, tenga mucho cuidado con dejarlo siempre abierto.</td>
+   
+  </tr>
+  </table>
+<button class="btn3" ><a style="color:black;" href="{{url_for('manual')}}">Regresar</a></button>
+</center>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<div align="center">
+<title>Decorativas</title>
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='estilos1.css')}}" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="/usr/lib/cgi-bin/lib/css/jkeyboard.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="/usr/lib/cgi-bin/lib/src/jkeyboard.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="jquery/jquery-3.5.1.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function () {
+
+	$("#btnd1").click(function (e) {
+		var datod = $("#d1").val();
+		$.ajax({url:'/selecciondec',type:'POST', data:{datod},success:
+		function (response) {
+			console.log(response);
+		}	
+		});
+		e.preventDefault();
+	});
+	
+	$("#btnd2").click(function (e) {
+		var datod = $("#d2").val();
+		$.ajax({url:'/selecciondec',type:'POST', data:{datod},success:
+		function (response) {
+			console.log(response);
+		}	
+		});
+		e.preventDefault();
+	});
+	
+	$("#btnd3").click(function (e) {
+		var datod = $("#d3").val();
+		$.ajax({url:'/selecciondec',type:'POST', data:{datod},success:
+		function (response) {
+			console.log(response);
+		}	
+		});
+		e.preventDefault();
+	});
+	
+	$("#btnd4").click(function (e) {
+		var datod = $("#d4").val();
+		$.ajax({url:'/selecciondec',type:'POST', data:{datod},success:
+		function (response) {
+			console.log(response);
+		}	
+		});
+		e.preventDefault();
+	});
+	
+	$("#btnd5").click(function (e) {
+		var datod = $("#d5").val();
+		$.ajax({url:'/selecciondec',type:'POST', data:{datod},success:
+		function (response) {
+			console.log(response);
+		}	
+		});
+		e.preventDefault();
+	});
+});
+</script>
+<p>En esta categoria IAMIA esta diseñado para cuidar las siguientes plantas <br> elije una opcion!</p>
+<p>Decorativas</p>
+<form action="/selecciondec" method="POST" >
+<table border="1" class="table table-dark">
+
+  <tr>
+  
+    <th scope="row">No.</th>
+
+    <th>Planta</th>
+    
+    <th>Frutos</th>
+
+    <th>Descripcion</th>
+
+    <th>IR</th>
+    
+  </tr>
+
+  <tr>
+  
+  
+  	 <th>
+  	 
+  	 <input value="1" id="d1" name="d1" style="background-color: darkslategrey;" size="2" readonly></th>
+
+    <th>Zinnia</th>
+    
+    <td> <img width="90" src="{{ url_for('static', filename='img/zinnia.jpeg') }}"></td>
+
+    <td>Zinnia es un género de plantas de la tribu del girasol dentro de la familia de las margaritas . [3] [4] Son nativos de matorrales y pastizales secos en un área que se extiende desde el suroeste de los Estados Unidos hasta América del Sur , con un centro de diversidad en México. Los miembros del género se destacan por sus flores solitarias de tallo largo que vienen en una variedad de colores brillantes.</td>
+    <td> <input type="button" name="btnd1" id="btnd1" value="Elegir"></td>
+
+  </tr>
+
+  <tr>
+
+	<th>
+  	 
+  	 <input value="2" id="m2" style="background-color: darkslategrey;" size="2" readonly placeholder="2"></th>
+	
+	
+    <th>Orquidea Alevilla</th>
+    
+    <td> <img width="90" src="{{ url_for('static', filename='img/alevilla.jpeg') }}"></td>
+
+    <td>Phalaenopsis es un género de las comúnmente llamadas orquídea alevilla, orquídea mariposa y también orquídeas boca de aproximadamente 60 especies de orquídeas de la familia Orchidaceae. Son nativas de todo el sureste asiático.</td>
+   <td> <input type="button" name="btnd2" id="btnd2" value="Elegir"></td>
+
+  </tr>
+
+  <tr>
+   <th>
+  	 <input value="3" id="d3" name="d3" style="background-color: darkslategrey;" size="2" readonly></th>
+
+    <th>Orquidea Mariposa</th>
+    
+    <td><img height="90" width="90" src="{{ url_for('static', filename='img/mariposa.jpeg') }}"></td>
+
+    <td>Orchis papilionacea es una especie incluida en la subfamilia Orchidoideae de la familia de las Orchidaceae. Se distribuye por la Europa mediterránea. Es de hábitos terrestres y tiene tubérculos.</td>
+    <td> <input type="button" name="btnd3" id="btnd3" value="Elegir"></td>
+  </tr>
+  
+  <tr>
+  <th>
+  
+   <input value="4" id="d4" name="d4" style="background-color: darkslategrey;" size="2" readonly></th>
+
+    <th>Geranios</th>
+    
+    <td><img width="90" height="60" src="{{ url_for('static', filename='img/geranio.jpeg') }}"></td>
+
+    <td>El género Geranium, comúnmente llamado geranio, agrupa 422 especies de plantas anuales, bienales y perennes frecuentemente utilizadas en jardinería por sus atractivas flores y su aroma característico. </td>
+	 <td> <input type="button" name="btnm4" id="btnm4" value="Elegir"></td>
+    
+  </tr>
+  
+  <tr>
+  <th>
+  
+  <input value="5" id="d5" name="d5" style="background-color: darkslategrey;" size="2" readonly></th>
+
+    <th>Oreja de Elefante Mini</th>
+    
+    <td><img width="90" src="{{ url_for('static', filename='img/orejaelefante.jpeg') }}"></td>
+
+    <td>Xanthosoma sagittifolium (L.) Schott es una especie de uso ornamental y comestible de la familia de las aráceas, originaria de América Central, cultivada extensamente en las regiones tropicales, que producen raíces tuberosas, ricas en almidón y que contienen entre 1 y 8,8% de proteína.</td>
+   <td> <input type="button" name="btnm5" id="btnd5" value="Elegir"></td>
+
+  </tr>
+  
+  
+
+</table>
+</form>
+
+
+
+</div>
+</html>
